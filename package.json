@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-360/scripts/packager.js",
-    "bundle": "node node_modules/react-360/scripts/bundle.js; cp static_assets build/static_assets",
+    "dev": "node node_modules/react-360/scripts/packager.js",
+    "build": "node node_modules/react-360/scripts/bundle.js; cp static_assets build/static_assets",
     "open": "node -e \"require('xopen')('http://localhost:8081/index.html')\"",
     "devtools": "react-devtools",
     "test": "jest"
