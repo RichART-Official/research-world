@@ -16,10 +16,22 @@ function init(bundle, parent, options = {}) {
     r360.getDefaultLocation()
   );
 
+  r360.renderToLocation(
+    r360.createRoot('immersionSection', { /* initial props */ }),
+    r360.getDefaultLocation()
+  );
 
+  r360.renderToLocation(
+    r360.createRoot('postHumanism', { /* initial props */ }),
+    r360.getDefaultLocation()
+  );
+  r360.renderToLocation(
+    r360.createRoot('selfAutomation', { /* initial props */ }),
+    r360.getDefaultLocation()
+  );
 
   // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('bg.png'));
+  r360.compositor.setBackground(r360.getAssetURL('360_world.jpg'));
 }
 
 window.React360 = {init};
