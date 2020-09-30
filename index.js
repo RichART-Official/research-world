@@ -30,7 +30,7 @@ export default class map extends React.Component {
         <Image style={{
                     width:2,
                     height: 1,
-                    transform: [{translate: [-2,0,-2]}, {rotateY: 0}]
+                    transform: [{translate: [-2,0,-5]}, {rotateY: 0}]
                 }} source={asset('title.png')} />
         
     </View>
@@ -44,8 +44,8 @@ const immersionSection = () => (
   <View>
   <Image 
         style={{
-          width: 2,
-          height: 1,
+          width: 3,
+          height: 1.5,
           transform: [
             {translate: [0,0,-1]}
           ]
@@ -68,7 +68,7 @@ const immersionSection = () => (
 const immersionImagery = () => (
   <View style={{
     transform: [
-      {translate: [1,0.5,-1]},
+      {translate: [1,0.5,-2]},
       {rotateY: -45},
       {scale: 3}
     ]
@@ -101,15 +101,25 @@ const postHumanism = () => (
       {scale: 3}
     ]
   }}>
-    <Image 
+     <Image 
         style={{
-          width: 2,
-          height: 1,
+          width: 4,
+          height: 2,
           transform: [
-            {translate: [0,0,-1]}
+            {translate: [0,1,-2]}
           ]
         }} 
         source={asset('post-humanism/1.png')}
+      />
+    <Image 
+        style={{
+          width: 5,
+          height: 2,
+          transform: [
+            {translate: [0,1,-1]}
+          ]
+        }} 
+        source={asset('post-humanism/2.png')}
       />
     <Text
     style={{
@@ -131,7 +141,7 @@ const selfAutomation = () => (
       ]
     }}>
       Self-Automation
-    </Text>
+    </Text> 
     <Image 
         style={{
           width: 3,
@@ -143,6 +153,8 @@ const selfAutomation = () => (
         }} 
         source={asset('self-automation/1.png')}
       />
+      
+    
   </View>
   
 )
