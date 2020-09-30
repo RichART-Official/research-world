@@ -16,6 +16,13 @@ function init(bundle, parent, options = {}) {
     r360.getDefaultLocation()
   );
 
+  
+
+  r360.renderToLocation(
+    r360.createRoot('immersionImagery', { /* initial props */ }),
+    r360.getDefaultLocation()
+  );
+
   r360.renderToLocation(
     r360.createRoot('immersionSection', { /* initial props */ }),
     r360.getDefaultLocation()

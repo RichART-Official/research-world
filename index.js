@@ -28,9 +28,9 @@ export default class map extends React.Component {
     return (
       <View>
         <Image style={{
-                    width: 300,
-                    height: 200,
-                    transform: [{translate: [0,0,]}, {rotateY: 0}]
+                    width:2,
+                    height: 1,
+                    transform: [{translate: [-2,0,-2]}, {rotateY: 0}]
                 }} source={asset('title.png')} />
         
     </View>
@@ -41,6 +41,31 @@ export default class map extends React.Component {
 
 
 const immersionSection = () => (
+  <View>
+  <Image 
+        style={{
+          width: 2,
+          height: 1,
+          transform: [
+            {translate: [0,0,-1]}
+          ]
+        }} 
+        source={asset('immersion/1.png')}
+    />
+  <Text style={{
+    transform: [
+      {translate: [1,2,0.5]},
+      {rotateY: -45},
+      {scale: 5}
+    ]
+  }}>
+    Immersion
+    
+  </Text>
+  </View>
+)
+
+const immersionImagery = () => (
   <View style={{
     transform: [
       {translate: [1,0.5,-1]},
@@ -48,7 +73,23 @@ const immersionSection = () => (
       {scale: 3}
     ]
   }}>
-    <Text>Immersion</Text>
+    <Image 
+        style={{
+          width: 2,
+          height: 1,
+          transform: [
+            {translate: [0,0,-1]}
+          ]
+        }} 
+        source={asset('immersion/1.png')}
+      />
+      <Text style={{
+        transform: [
+          {translate: [1,0,-2]},
+          {scale:2},
+          {rotateY: 45}
+        ]
+      }}>Immersion</Text>
   </View>
 )
 
@@ -60,23 +101,54 @@ const postHumanism = () => (
       {scale: 3}
     ]
   }}>
-    <Text>Post-Humanism</Text>
+    <Image 
+        style={{
+          width: 2,
+          height: 1,
+          transform: [
+            {translate: [0,0,-1]}
+          ]
+        }} 
+        source={asset('post-humanism/1.png')}
+      />
+    <Text
+    style={{
+      transform: [
+        {translate: [0,0,-1]}
+      ]
+    }} 
+    >Post-Humanism</Text>
   </View>
 )
 
 const selfAutomation = () => (
-  <View style={{
-    transform: [
-      {translate: [-1.5,0.5,1.2]},
-      {rotateY: -225},
-      {scale: 3}
-    ]
-  }}>
-    <Text>Self-Automation</Text>
+  <View>
+    <Text style={{
+      transform: [
+        {translate: [0,1,3]},
+        {rotateY: -180},
+        {scale: 3}
+      ]
+    }}>
+      Self-Automation
+    </Text>
+    <Image 
+        style={{
+          width: 3,
+          height: 2,
+          transform: [
+            {translate: [-2,1,3]},
+            {rotateY: -180},
+          ]
+        }} 
+        source={asset('self-automation/1.png')}
+      />
   </View>
+  
 )
 
 AppRegistry.registerComponent('postHumanism', () => postHumanism);
 AppRegistry.registerComponent('selfAutomation', () => selfAutomation);
-AppRegistry.registerComponent('immersionSection', () => immersionSection);
+AppRegistry.registerComponent('immersionImagery', () => immersionImagery);
+AppRegistry.registerComponent('immersionSection', () => immersionImagery);
 AppRegistry.registerComponent('map', () => map);
