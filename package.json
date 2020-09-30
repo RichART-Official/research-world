@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "node node_modules/react-360/scripts/packager.js",
-    "build": "node node_modules/react-360/scripts/bundle.js && cp static_assets build/static_assets",
+    "build": "node node_modules/react-360/scripts/bundle.js && cp -R static_assets build/static_assets",
     "open": "node -e \"require('xopen')('http://localhost:8081/index.html')\"",
     "devtools": "react-devtools",
     "test": "jest"
