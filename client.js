@@ -37,7 +37,8 @@ function init(bundle, parent, options = {}) {
     r360.getDefaultLocation()
   );
 
-  console.log(r360);
+
+  console.log(r360.getDefaultLocation());
 
   // Load the initial environment
   r360.compositor.setBackground(r360.getAssetURL('360_world.jpg'));
