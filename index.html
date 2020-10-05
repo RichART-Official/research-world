@@ -4,21 +4,53 @@
     <title>map</title>
     <style>body { margin: 0; }</style>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body > * {
+        display: block;
+      }
+      body{
+        background: whitesnow;
+      }
+      main {
+        background: white;
+        font-family: sans-serif;
+        padding: 1em;
+        max-width: 30rem;
+        margin: 1em auto;
+      }
+      h1 {
+        font-size: 3em;
+        margin-top: 1em;
+      
+      }
+    p {
+      margin-top: 1em;
+      display: block;
+    }
+      a {
+        padding: 0.66em 2em;
+        background: #f7ef00;
+        text-decoration: none;
+        color: black;
+        border: #f2ea02 solid 1px;
+        margin-top: 2em;
+        display: inline-block;
+      }
+      a:active {
+        background: #f2ea02;
+      }
+    </style>
   </head>
   <body>
-    <!-- Attachment point for your app -->
-    <div id="container"></div>
-    <script src="./client.bundle?platform=vr"></script>
-    <script>
-      // Initialize the React 360 application
-      React360.init(
-        'index.bundle?platform=vr&dev=true',
-        document.getElementById('container'),
-        {
-          assetRoot: 'static_assets/',
-        }
-      );
-    </script>
+   <main>
+     <h1>Richard's visual research</h1>
+     <p>You will now enter the visual research board, made for the WDKA visual research practice.</p>
+     <a target="_blanc"href="https://miro.com/app/board/o9J_ks9FPxQ=/">Open board ></a>
+   </main>
   </body>
 </html>
 
